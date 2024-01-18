@@ -2,3 +2,25 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+    --bg-color: #000028;
+    --main-color: #FF0070;
+    --text-color: #F1B2CE;
+    --accent-color: #DB00FF;
+}
+
+:root.theme_dark {
+    --bg-color: #000028;
+    --main-color: #FF0070;
+    --text-color: #F1B2CE;
+    --accent-color: #DB00FF;
+}
+
+:root.theme-light {
+    --bg-color: #FFF1F7;
+    --main-color: #FF8DCB;
+    --text-color: #353430;
+    --accent-color: #FFC2E6;
+}
+

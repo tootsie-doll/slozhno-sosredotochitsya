@@ -10,3 +10,13 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+@media (prefers-color-scheme: light) {
+    :root {
+        /* Дублируем переменные светлой темы */
+        --bg-color: #FFF1F7;
+        --main-color: #FF8DCB;
+        --text-color: #353430;
+        --accent-color: #FFC2E6;
+    }
+}
