@@ -1,5 +1,159 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+@import url(../fonts/fonts.css);
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+    font-family: var(--main-font, 'IBM Plex mono', sans-serif);
+    color: var(--text-color), #F1B2CE;
+    font-style: normal;
+    background: var(--back-img), #000028;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 auto;
 }
+
+.content-section {
+    width: 100%;
+}
+
+.decorated-zone {
+    position: relative;
+}
+
+.decorated-zone::before {
+    content: " ";
+    position: absolute;
+    inset: 0 0 0 calc(100% - 26px);
+    width: 25px;
+    height: 25px;
+    border-top: 1px solid var(--main-color);
+    border-right: 1px solid var(--main-color);
+}
+
+.decorated-zone::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    inset: calc(100% - 26px) 0 0 0;
+    width: 25px;
+    height: 25px;
+    border-bottom: 1px solid var(--main-color);
+    border-left: 1px solid var(--main-color);
+}
+
+.record {
+    position: relative;
+}
+
+.record::before {
+    content:"Rec";
+    position: absolute;
+    inset: 2px 0 0 calc(100% - 85px);
+    height: 26px;
+    justify-self: end;
+    color: var(--main-color);
+    text-align: center;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.record::after {
+    content:" ";
+    position: absolute;
+    inset: 9px calc(100% - 20px);
+    width: 9px;
+    height: 9px;
+    background-image: url(../images/ellipse.svg);
+    background-color: var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 0 4px 3px var(--main-color);
+}
+
+.header {
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.header__theme-menu-list {
+    padding-block: 65px;
+    display: grid;
+    gap: 10px;
+    justify-content: end;
+}
+
+.header__theme-menu-item {
+    width: 70px;
+    justify-self: end;
+    display: grid;
+}
+
+.header__theme-menu-button {
+    width: 100%;
+    justify-self: center;
+    background: transparent;
+    border: none;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: lowercase;
+    line-height: 1.2;
+}
+
+.header__theme-menu-button_active {
+    border: 1px solid var(--main-color);
+}
+
+.header__title {
+    color: var(--accent-color);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 82.5%; /* 95.7px */
+    text-shadow: var(--text-shadow);
+}
+
+/*адаптивность*/
+
+@media(width < 768px) {
+    .content-section {
+        padding-inline: 2.67vi;
+        padding-block: 2.67vi;
+    }
+    .header__title {
+        font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    }
+}
+
+@media(768px <= width < 1024px) {
+    .content-section {
+        padding-inline: 2.6vi;
+        padding-block: 2.6vi;
+    }
+
+    .header__theme-menu-list {
+        padding-block: 146px 173px;
+    }
+
+    .header__title {
+        font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    }
+
+}
+
+@media( width >= 1024px) {
+    .content-section {
+        padding-inline: 1.95vi;
+        padding-block: 1.95vi;
+    }
+
+    .header__theme-menu-list {
+        padding-block: 0 273px;
+        justify-content: center;
+        grid-template-columns: repeat(3, 70px);
+    }
+
+    .header__title {
+        font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    }
+}
+

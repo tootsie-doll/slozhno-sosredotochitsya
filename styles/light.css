@@ -5,18 +5,63 @@
 */
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+    --bg-color: #FFF1F7;
+    --main-color: #353430;
+    --text-color: #353430;
+    --accent-color: #FFC2E6;
+    --text-shadow: 4px 4px 0px #FF0070;
+    --main-font: 'IBM Plex mono';
+    --back-img: fixed url(../images/cover-image-light.png) no-repeat center / cover;
 }
 
+.page.theme_light .decorated-zone::before {
+    border-top: 1px solid var(--main-color);
+    border-right: 1px solid var(--main-color);
+}
+.page.theme_light .decorated-zone::after {
+    border-bottom: 1px solid var(--main-color);
+    border-left: 1px solid var(--main-color);
+    }
+
+.page.theme_light .record::before {
+    display: none
+}
+.page.theme_light .record::after {
+    display: none
+}
+
+.page.theme_light .header__title {
+    color: var(--accent-color);
+    text-shadow: var(--text-shadow);
+}
+
+
 @media (prefers-color-scheme: light) {
+    /* Дублируем переменные светлой темы */
     :root {
-        /* Дублируем переменные светлой темы */
         --bg-color: #FFF1F7;
-        --main-color: #FF8DCB;
+        --main-color: #353430;
         --text-color: #353430;
         --accent-color: #FFC2E6;
+        --text-shadow: 4px 4px 0px #FF0070;
+        --main-font: 'IBM Plex mono';
+        --back-img: fixed url(../images/cover-image-light.png) no-repeat center / cover;
+    }
+    .decorated-zone::before {
+        border-top: 1px solid var(--main-color);
+        border-right: 1px solid var(--main-color);
+    }
+    .decorated-zone::after {
+        border-bottom: 1px solid var(--main-color);
+        border-left: 1px solid var(--main-color);
+    }
+
+    .record::before {
+        display: none
+    }
+    .record::after {
+        display: none
     }
 }
+
+
