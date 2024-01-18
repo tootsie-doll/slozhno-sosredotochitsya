@@ -35,6 +35,10 @@
     text-shadow: var(--text-shadow);
 }
 
+.page.theme_light .header__subtitle {
+    color: var(--text-color);
+    background-color: var(--accent-color);
+}
 
 @media (prefers-color-scheme: light) {
     /* Дублируем переменные светлой темы */
@@ -61,6 +65,14 @@
     }
     .record::after {
         display: none
+    }
+    .header__title {
+        color: var(--accent-color);
+        text-shadow: var(--text-shadow);
+    }
+    .header__subtitle {
+        color: var(--text-color);
+        background-color: var(--accent-color);
     }
 }
 

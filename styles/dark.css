@@ -52,3 +52,12 @@
     box-shadow: 0 0 4px 3px var(--main-color);
 }
 
+.page.theme_dark .header__title {
+    color: var(--accent-color);
+    text-shadow: var(--text-shadow);
+}
+
+.page.theme_dark .header__subtitle {
+    color: var(--bg-color);
+    background-color: var(--main-color);
+}
