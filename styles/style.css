@@ -215,7 +215,7 @@
     .header {
         min-height: 668px;
         grid-template-columns: 1fr;
-        padding: 20px;
+        padding: 10px;
     }
 
     .header__title {
