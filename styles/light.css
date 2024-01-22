@@ -40,6 +40,18 @@
     background-color: var(--accent-color);
 }
 
+.page.theme_light .article-title {
+    color: var(--main-color);
+}
+
+.page.theme_light .article__item-title {
+    color: var(--text-color);
+}
+
+.page.theme_light .title-decor {
+    background-color: var(--accent-color);
+}
+
 @media (prefers-color-scheme: light) {
     /* Дублируем переменные светлой темы */
     :root {
@@ -63,17 +75,34 @@
     .record::before {
         display: none
     }
+
     .record::after {
         display: none
     }
+
     .header__title {
         color: var(--accent-color);
         text-shadow: var(--text-shadow);
     }
+
     .header__subtitle {
         color: var(--text-color);
         background-color: var(--accent-color);
     }
+
+    .article-title {
+        color: var(--main-color);
+    }
+
+    .article__item-title {
+        color: var(--text-color);
+    }
+
+    .title-decor {
+        background-color: var(--accent-color);
+    }
+
+
 }
 
 

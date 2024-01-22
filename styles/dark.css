@@ -61,3 +61,15 @@
     color: var(--bg-color);
     background-color: var(--main-color);
 }
+
+.page.theme_dark .article__title {
+    color: var(--main-color);
+}
+
+.page.theme_dark .article__item-title {
+    color: var(--bg-color);
+}
+
+.page.theme_dark .title-decor {
+    background-color: var(--main-color);
+}

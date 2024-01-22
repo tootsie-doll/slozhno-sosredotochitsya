@@ -8,7 +8,7 @@
     --main-color: #FF0070;
     --text-color: #F1B2CE;
     --accent-color: #DB00FF;
-    --text-shadow: 4px 4px 0px #FF0070;
+    --text-shadow: 4px 4px 0 #FF0070;
     --main-font: 'IBM Plex mono';
     --back-img: fixed url(../images/cover-image-dark.png) no-repeat center / cover;
 }
