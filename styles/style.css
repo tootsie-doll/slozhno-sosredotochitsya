@@ -211,6 +211,14 @@
 
 @media (width < 768px){
     
+ .decorated-zone::before {
+    inset: 10px 0 0 calc(100% - 36px);
+}
+
+.decorated-zone::after {
+    inset: calc(100% - 36px) 0 0 10px;
+}
+    
 .record::before {
     inset: 2px 0 0 calc(100% - 85px);
 }
