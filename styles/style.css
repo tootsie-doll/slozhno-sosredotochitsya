@@ -140,6 +140,18 @@
     text-decoration: none;
 }
 
+.accent-link:hover {
+    text-decoration: underline;
+}
+
+.accent-link:focus {
+    outline: none;
+}
+
+.accent-link:focus-visible {
+    outline: 1px solid #F1B2CE;
+}
+
 .article {
     grid-template-rows: auto auto;
     font-family: inherit;
@@ -239,7 +251,7 @@
         padding: 10px;
     }
 =======
-    
+
  .decorated-zone::before {
     inset: 10px 0 0 calc(100% - 36px);
 }
@@ -248,7 +260,7 @@
 .decorated-zone::after {
     inset: calc(100% - 36px) 0 0 10px;
 }
-    
+
 .record::before {
     inset: 2px 0 0 calc(100% - 85px);
 }
@@ -256,7 +268,7 @@
 .record::after {
     inset: 9px 0 0 calc(100% - 20px);
 }
-    
+
 .header {
     min-height: 668px;
     grid-template-columns: 1fr;
