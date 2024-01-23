@@ -30,6 +30,33 @@
 }
 
 
+.page.theme_dark .record {
+    position: relative;
+}
+
+.page.theme_dark .record::before {
+    content:"Rec";
+    position: absolute;
+    inset: 2px 0 0 calc(100% - 85px);
+    height: 26px;
+    justify-self: end;
+    color: var(--main-color);
+    text-align: center;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.page.theme_dark .record::after {
+    content:" ";
+    position: absolute;
+    inset: 9px 0 0 calc(100% - 20px);
+    width: 9px;
+    height: 9px;
+    background-image: url(../images/ellipse.svg);
+    background-color: var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 0 4px 3px var(--main-color);
+}
 
 .page.theme_dark .header__title {
     color: var(--accent-color);

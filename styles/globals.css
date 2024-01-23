@@ -1,5 +1,7 @@
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
 
+@use postcss-preset-env(stage: 0, browsers: "last 2 versions");
+
 *,
 *::before,
 *::after {
