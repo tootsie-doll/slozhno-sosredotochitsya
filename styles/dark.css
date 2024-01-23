@@ -52,3 +52,19 @@
 .page.theme_dark .title-decor {
     background-color: var(--main-color);
 }
+
+.page.theme_dark .header__theme-menu-button:hover {
+    border: 1px solid rgba(255, 0, 112, 0.40);
+}
+
+.page.theme_dark .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid rgba(255, 0, 112, 0.40);
+}
+
+.page.theme_dark .accent-link {
+    text-shadow: var(--accent-link);
+}
+
+.page.theme_dark .accent-link:focus-visible {
+    outline: 1px solid #F1B2CE;
+}
