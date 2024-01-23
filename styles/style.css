@@ -216,6 +216,7 @@
 /*адаптив*/
 
 @media (width < 768px){
+<<<<<<< HEAD
     .decorated-zone::before {
         inset: 10px 0 0 calc(100% - 36px);
     }
@@ -237,68 +238,92 @@
         grid-template-columns: 1fr;
         padding: 10px;
     }
+=======
+    
+ .decorated-zone::before {
+    inset: 10px 0 0 calc(100% - 36px);
+}
+>>>>>>> 498fdf3063e7e0c1f6bfc042e519e6cb51105518
 
-    .header__title {
-        font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    }
+.decorated-zone::after {
+    inset: calc(100% - 36px) 0 0 10px;
+}
+    
+.record::before {
+    inset: 2px 0 0 calc(100% - 85px);
+}
 
-    .main {
-        padding: 40px 10px;
-        gap: 50px;
-    }
+.record::after {
+    inset: 9px 0 0 calc(100% - 20px);
+}
+    
+.header {
+    min-height: 668px;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
 
-    .article {
-        grid-template-columns: 100%;
-    }
+.header__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+}
 
-    .gallery {
-        gap: 10px;
-    }
+.main {
+    padding: 40px 10px;
+    gap: 50px;
+}
 
-    .footer {
-        min-height: 668px;
-        padding: 10px;
-    }
+.article {
+    grid-template-columns: 100%;
+}
+
+.gallery {
+    gap: 10px;
+}
+
+.footer {
+    min-height: 668px;
+    padding: 10px;
+}
 
 }
 
 @media (768px <= width < 1024px) {
 
-    .decorated-zone::before {
-        inset: 20px 0 0 calc(100% - 46px);
-    }
+.decorated-zone::before {
+    inset: 20px 0 0 calc(100% - 46px);
+}
 
-    .decorated-zone::after {
-        inset: calc(100% - 46px) 0 0 20px;
-    }
+.decorated-zone::after {
+    inset: calc(100% - 46px) 0 0 20px;
+}
 
-    .header {
-        min-height: 1024px;
-        grid-template-columns: 1fr;
-        padding: 20px;
-    }
+.header {
+    min-height: 1024px;
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
 
-    .header__title {
-        font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    }
+.header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
 
-    .header__subtitle {
-        width: 50%;
-        justify-self: end;
-    }
+.header__subtitle {
+    width: 50%;
+    justify-self: end;
+}
 
-    .main {
-        padding: 60px 20px;
-        gap: 80px;
-    }
+.main {
+    padding: 60px 20px;
+    gap: 80px;
+}
 
-    .why, .what, .how {
-        grid-template-columns: 1fr 2fr;
-    }
+.why, .what, .how {
+    grid-template-columns: 1fr 2fr;
+}
 
-    .why>.article__item:nth-child(3) {
-        grid-column: 2;
-    }
+.why>.article__item:nth-child(3) {
+    grid-column: 2;
+}
 
     .what .article__title {
         width: 50%;
