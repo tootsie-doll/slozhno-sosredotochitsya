@@ -19,6 +19,7 @@
     border-top: 1px solid var(--main-color);
     border-right: 1px solid var(--main-color);
 }
+
 .page.theme_light .decorated-zone::after {
     border-bottom: 1px solid var(--main-color);
     border-left: 1px solid var(--main-color);
@@ -58,6 +59,10 @@
     border: 1px solid rgba(50, 49, 45, 0.40);
 }
 
+.page.theme_light .header__theme-menu-button:focus {
+    outline: none;
+}
+
 .page.theme_light .header__theme-menu-button:focus-visible {
     border-bottom: 1px solid rgba(50, 49, 45, 0.40);
 }
@@ -87,10 +92,12 @@
         --main-font: 'IBM Plex mono';
         --back-img: fixed url(../images/cover-image-light.png) no-repeat center / cover;
     }
+
     .decorated-zone::before {
         border-top: 1px solid var(--main-color);
         border-right: 1px solid var(--main-color);
     }
+
     .decorated-zone::after {
         border-bottom: 1px solid var(--main-color);
         border-left: 1px solid var(--main-color);
@@ -130,21 +137,25 @@
         border: 1px solid rgba(50, 49, 45, 0.40);
     }
 
+    .header__theme-menu-button:focus {
+        outline: none;
+    }
+
     .header__theme-menu-button:focus-visible {
         border-bottom: 1px solid rgba(50, 49, 45, 0.40);
     }
 
-    .page.theme_light .accent-link {
+    .accent-link {
         text-shadow: var(--accent-link);
         cursor: pointer;
         text-decoration: none;
     }
 
-    .page.theme_light .accent-link:hover {
+    .accent-link:hover {
         text-decoration: underline;
     }
 
-    .page.theme_light .accent-link:focus-visible {
+    .accent-link:focus-visible {
         outline: 1px solid #353430;
     }
 

@@ -57,14 +57,28 @@
     border: 1px solid rgba(255, 0, 112, 0.40);
 }
 
+.page.theme_dark .header__theme-menu-button:focus {
+    outline: none;
+}
+
 .page.theme_dark .header__theme-menu-button:focus-visible {
     border-bottom: 1px solid rgba(255, 0, 112, 0.40);
 }
 
 .page.theme_dark .accent-link {
     text-shadow: var(--accent-link);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .page.theme_dark .accent-link:focus-visible {
     outline: 1px solid #F1B2CE;
+}
+
+.page.theme_dark .accent-link:hover {
+    text-decoration: underline;
+}
+
+.page.theme_dark .accent-link:focus {
+    outline: none;
 }
