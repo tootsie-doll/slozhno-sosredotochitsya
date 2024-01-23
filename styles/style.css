@@ -24,7 +24,6 @@
     height: 25px;
     border-top: 1px solid var(--main-color);
     border-right: 1px solid var(--main-color);
-    inset: 10px 0 0 calc(100% - 36px);
 }
 
 .decorated-zone::after {
@@ -35,7 +34,6 @@
     height: 25px;
     border-bottom: 1px solid var(--main-color);
     border-left: 1px solid var(--main-color);
-    inset: calc(100% - 36px) 0 0 10px;
 }
 
 .record {
@@ -136,6 +134,12 @@
     gap: 50px;
 }
 
+.accent-link {
+    text-shadow: var(--accent-link);
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .article {
     grid-template-rows: auto auto;
     font-family: inherit;
@@ -212,6 +216,22 @@
 /*адаптив*/
 
 @media (width < 768px){
+    .decorated-zone::before {
+        inset: 10px 0 0 calc(100% - 36px);
+    }
+
+    .decorated-zone::after {
+        inset: calc(100% - 36px) 0 0 10px;
+    }
+
+    .record::before {
+        inset: 2px 0 0 calc(100% - 85px);
+    }
+
+    .record::after {
+        inset: 9px 0 0 calc(100% - 20px);
+    }
+
     .header {
         min-height: 668px;
         grid-template-columns: 1fr;

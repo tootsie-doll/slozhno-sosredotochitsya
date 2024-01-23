@@ -13,6 +13,7 @@
     --main-color: #FF0070;
     --text-color: #F1B2CE;
     --accent-color: #DB00FF;
+    --accent-link: 2px 2px 0 #FF0070;
     --text-shadow: 4px 4px 0px #FF0070;
     --main-font: 'IBM Plex mono';
     --back-img: fixed url(../images/cover-image-dark.png) no-repeat center / cover;
@@ -28,29 +29,7 @@
     border-left: 1px solid var(--main-color);
 }
 
-.page.theme_dark .record::before {
-    content:"Rec";
-    position: absolute;
-    inset: 2px 0 0 calc(100% - 85px);
-    height: 26px;
-    justify-self: end;
-    color: var(--main-color);
-    text-align: center;
-    line-height: 1.4;
-    text-transform: uppercase;
-}
 
-.page.theme_dark .record::after {
-    content:" ";
-    position: absolute;
-    inset: 9px calc(100% - 20px);
-    width: 9px;
-    height: 9px;
-    background-image: url(../images/ellipse.svg);
-    background-color: var(--main-color);
-    border-radius: 50%;
-    box-shadow: 0 0 4px 3px var(--main-color);
-}
 
 .page.theme_dark .header__title {
     color: var(--accent-color);

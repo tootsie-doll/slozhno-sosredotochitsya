@@ -26,6 +26,7 @@
 .page.theme_light .record::before {
     display: none
 }
+
 .page.theme_light .record::after {
     display: none
 }
