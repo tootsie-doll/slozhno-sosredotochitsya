@@ -84,6 +84,10 @@
     outline: 1px solid #353430;
 }
 
+.page.theme_light .article__second-title {
+    color: var(--main-color);
+}
+
 @media (prefers-color-scheme: light) {
     /* Дублируем переменные светлой темы */
     :root {
@@ -165,6 +169,10 @@
     .accent-link:focus-visible {
             outline: 1px solid #353430;
         }
+    .article__second-title {
+        color: var(--main-color);
     }
+
+}
 
 

@@ -103,3 +103,7 @@
 .page.theme_dark .article__item-text {
     color: var(--text-color);
 }
+
+.page.theme_dark .article__second-title {
+    color: var(--bg-color);
+}
