@@ -241,6 +241,7 @@
 /*адаптив*/
 
 @media (width < 768px){
+
     .decorated-zone::before {
         inset: 10px 0 0 calc(100% - 36px);
     }
@@ -261,6 +262,10 @@
         min-height: 668px;
         grid-template-columns: 1fr;
         padding: 10px;
+    }
+
+     .decorated-zone::before {
+        inset: 10px 0 0 calc(100% - 36px);
     }
 
      .decorated-zone::before {
