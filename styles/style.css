@@ -1,7 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-@import url(../fonts/fonts.css);
-
 .page {
     font-family: var(--main-font), 'IBM Plex mono', sans-serif;
     color: var(--text-color), #F1B2CE;
@@ -59,9 +57,10 @@
     inset: 9px 0 0 calc(100% - 20px);
     width: 9px;
     height: 9px;
-    background-image: url(../images/ellipse.svg);
-    background-color: var(--main-color);
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
     border-radius: 50%;
+    background: var(--main-color);
     box-shadow: 0 0 4px 3px var(--main-color);
 }
 
@@ -148,7 +147,7 @@
 }
 
 .accent-link {
-    text-shadow: var(--accent-link);
+    box-shadow: 0 0 4px 2px var(--accent-link);
     cursor: pointer;
     text-decoration: none;
 }
