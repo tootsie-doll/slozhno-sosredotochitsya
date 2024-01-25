@@ -10,7 +10,7 @@
     --text-color: #353430;
     --accent-color: #FFC2E6;
     --accent-link: #FF8DCB;
-    --text-shadow: 4px 4px 0px #FF0070;
+    --text-shadow: 4px 4px 0px #FF8DCB;
     --main-font: 'IBM Plex mono';
     --back-img: fixed url(../images/cover-image-light.png) no-repeat center / cover;
 }
@@ -91,7 +91,7 @@
         --text-color: #353430;
         --accent-color: #FFC2E6;
         --accent-link: #FF8DCB;
-        --text-shadow: 4px 4px 0px #FF0070;
+        --text-shadow: 4px 4px 0px #FF8DCB;
         --main-font: 'IBM Plex mono';
         --back-img: fixed url(../images/cover-image-light.png) no-repeat center / cover;
     }
@@ -114,9 +114,9 @@
         }
 
     .header__title {
-            color: var(--accent-color);
-            text-shadow: var(--text-shadow);
-        }
+        color: var(--accent-color);
+        text-shadow: var(--text-shadow);
+    }
 
     .header__subtitle {
             color: var(--text-color);
