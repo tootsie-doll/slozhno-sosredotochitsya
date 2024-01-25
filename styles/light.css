@@ -46,18 +46,6 @@
     background-color: var(--accent-link);
 }
 
-.page.theme_light .article-title {
-    color: var(--main-color);
-}
-
-.page.theme_light .article__item-title {
-    color: var(--text-color);
-}
-
-.page.theme_light .title-decor {
-    background-color: var(--accent-link);
-}
-
 .page.theme_light .header__theme-menu-button:hover {
     border: 1px solid rgba(50, 49, 45, 0.40);
 }
@@ -67,26 +55,33 @@
 }
 
 .page.theme_light .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid rgba(50, 49, 45, 0.40);
+    border-bottom: 1px solid rgba(50, 49, 45);        ;
 }
 
-.page.theme_light .accent-link {
-    box-shadow: 0 0 4px 2px var(--accent-link);
-    cursor: pointer;
-    text-decoration: none;
+.page.theme_light .section__title {
+    color: var(--main-color);
+}
+
+.page.theme_light .accent-span {
+    text-shadow: 2px 2px #FF8DCB;
 }
 
 .page.theme_light .accent-link:hover {
-    text-decoration: underline;
+    box-shadow: 0 1px 0 #353430;
 }
 
 .page.theme_light .accent-link:focus-visible {
     outline: 1px solid #353430;
 }
 
-.page.theme_light .article__second-title {
+.page.theme_light .article__title {
     color: var(--main-color);
 }
+
+.page.theme_light .article__text {
+    color: var(--text-color);
+}
+
 
 @media (prefers-color-scheme: light) {
     /* Дублируем переменные светлой темы */
@@ -153,26 +148,34 @@
         }
 
     .header__theme-menu-button:focus-visible {
-            border-bottom: 1px solid rgba(50, 49, 45, 0.40);
+            border-bottom: 1px solid rgba(50, 49, 45);
         }
 
-    .accent-link {
-            box-shadow: 0 0 4px 2px var(--accent-link);
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-    .accent-link:hover {
-            text-decoration: underline;
-        }
-
-    .accent-link:focus-visible {
-            outline: 1px solid #353430;
-        }
-    .article__second-title {
+    .section__title {
         color: var(--main-color);
     }
 
+    .accent-span {
+        text-shadow: 2px 2px #FF8DCB;
+    }
+
+    .accent-link:hover {
+        box-shadow: 0 1px 0 #353430;
+    }
+
+    .accent-link:focus-visible {
+        outline: 1px solid #353430;
+    }
+
+    .article__title {
+        color: var(--main-color);
+    }
+
+    .article__text {
+        color: var(--text-color);
+    }
 }
+
+
 
 
