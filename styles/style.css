@@ -288,7 +288,7 @@
 
     .why {
         display: grid;
-        grid-template-columns: 236px 1fr;
+        grid-template-columns: repeat(1, 236px auto);
         grid-template-rows: auto;
     }
 
@@ -308,7 +308,7 @@
 
     .how {
         display: grid;
-        grid-template-columns: 236px 432px;
+        grid-template-columns: repeat(1, 236px auto);
         grid-template-rows: auto;
     }
 
@@ -413,7 +413,7 @@
 
     .why {
         display: grid;
-        grid-template-columns: minmax(236px, 1fr) 2fr;
+        grid-template-columns: repeat(1, 315px auto);
         grid-template-rows: auto;
     }
 
@@ -423,18 +423,18 @@
 
     .what {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
         grid-template-rows: auto;
     }
 
-    .what .article {
-        grid-column: span 1;
-        grid-row: 2;
+    .what>.section__title {
+        width: 315px;
+        grid-column: 1/4;
     }
 
     .how {
         display: grid;
-        grid-template-columns: minmax(236px, 1fr) 2fr;
+        grid-template-columns: repeat(1, 315px auto);
         grid-template-rows: auto;
     }
 
