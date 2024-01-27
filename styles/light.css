@@ -15,27 +15,12 @@
     --back-img: fixed url(../images/cover-image-light.png) no-repeat center / cover;
 }
 
-.page.theme_light .decorated-zone::before {
-    border-top: 1px solid var(--main-color);
-    border-right: 1px solid var(--main-color);
-}
-
-.page.theme_light .decorated-zone::after {
-    border-bottom: 1px solid var(--main-color);
-    border-left: 1px solid var(--main-color);
-    }
-
 .page.theme_light .record::before {
     display: none;
 }
 
 .page.theme_light .record::after {
     display: none;
-}
-
-.page.theme_light .header__title {
-    color: var(--accent-color);
-    text-shadow: var(--text-shadow);
 }
 
 .page.theme_light .header__subtitle {
@@ -78,10 +63,6 @@
     color: var(--main-color);
 }
 
-.page.theme_light .article__text {
-    color: var(--text-color);
-}
-
 
 @media (prefers-color-scheme: light) {
     /* Дублируем переменные светлой темы */
@@ -96,60 +77,33 @@
         --back-img: fixed url(../images/cover-image-light.png) no-repeat center / cover;
     }
 
-    .decorated-zone::before {
-            border-top: 1px solid var(--main-color);
-            border-right: 1px solid var(--main-color);
-        }
-    .decorated-zone::after {
-            border-bottom: 1px solid var(--main-color);
-            border-left: 1px solid var(--main-color);
-        }
-
     .record::before {
-            display: none;
-        }
+        display: none;
+    }
 
     .record::after {
-            display: none;
-        }
-
-    .header__title {
-        color: var(--accent-color);
-        text-shadow: var(--text-shadow);
+        display: none;
     }
 
     .header__subtitle {
-            color: var(--text-color);
-        }
-
-
-    .title-decor {
-            background-color: var(--accent-link);
-        }
-
-    .article-title {
-            color: var(--main-color);
-        }
-
-    .article__item-title {
-            color: var(--text-color);
-        }
+        color: var(--text-color);
+    }
 
     .title-decor {
-            background-color: var(--accent-link);
-        }
+        background-color: var(--accent-link);
+    }
 
     .header__theme-menu-button:hover {
-            border: 1px solid rgba(50, 49, 45, 0.40);
-        }
+        border: 1px solid rgba(50, 49, 45, 0.40);
+    }
 
     .header__theme-menu-button:focus {
-            outline: none;
-        }
+        outline: none;
+    }
 
     .header__theme-menu-button:focus-visible {
-            border-bottom: 1px solid rgba(50, 49, 45);
-        }
+        border-bottom: 1px solid rgba(50, 49, 45);        ;
+    }
 
     .section__title {
         color: var(--main-color);
@@ -169,10 +123,6 @@
 
     .article__title {
         color: var(--main-color);
-    }
-
-    .article__text {
-        color: var(--text-color);
     }
 }
 
