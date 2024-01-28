@@ -403,6 +403,14 @@
 }
 
 @media ( width >= 1024px) {
+    .record::before {
+
+        inset: 2px 0 0 calc(100% - 85px);
+    }
+
+    .record::after {
+        inset: 9px 0 0 calc(100% - 18px);
+    }
 
     .decorated-zone::before {
         inset: 20px 0 0 calc(100% - 46px);
