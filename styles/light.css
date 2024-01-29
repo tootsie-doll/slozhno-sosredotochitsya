@@ -35,16 +35,8 @@
     border: 1px solid rgba(50, 49, 45, 0.40);
 }
 
-.page.theme_light .header__theme-menu-button:focus {
-    outline: none;
-}
-
 .page.theme_light .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid rgba(50, 49, 45);        ;
-}
-
-.page.theme_light .section__title {
-    color: var(--main-color);
+    border-bottom: 1px solid rgba(50, 49, 45);
 }
 
 .page.theme_light .accent-span {
@@ -97,16 +89,8 @@
         border: 1px solid rgba(50, 49, 45, 0.40);
     }
 
-    .header__theme-menu-button:focus {
-        outline: none;
-    }
-
     .header__theme-menu-button:focus-visible {
         border-bottom: 1px solid rgba(50, 49, 45);        ;
-    }
-
-    .section__title {
-        color: var(--main-color);
     }
 
     .accent-span {
