@@ -193,7 +193,7 @@
 .article {
     width: 100%;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: auto;
     gap: 10px;
 }
 
@@ -224,7 +224,9 @@
 }
 
 .pictures {
+    width: 100%;
     display: grid;
+    grid-template-columns: 100%;
     gap: 10px;
 }
 .gallery {
@@ -232,6 +234,7 @@
     list-style: none;
     display: grid;
     grid-template-rows: 142px repeat(2, 355px 237px);
+    grid-template-columns: auto;
     grid-auto-flow: row;
     gap: 10px;
 }
@@ -357,6 +360,7 @@
     }
 
     .gallery {
+        width: 100%;
         display: grid;
         gap: 20px;
         grid-template-columns: repeat(3, 1fr);
@@ -475,7 +479,7 @@
 
     .what {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+        grid-template-columns: repeat(3, 1fr));
         grid-template-rows: auto;
     }
 
